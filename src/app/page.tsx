@@ -74,7 +74,7 @@ export default function GuideHomePage() {
         />
 
         {/* Right Content Area - Focused strictly on Image + What is this + What it is doing */}
-        <main className="flex-1 lg:pl-72 p-5 sm:p-8 lg:p-10 min-w-0 transition-all">
+        <main className="flex-1 lg:ml-72 p-6 sm:p-8 lg:p-10 xl:p-12 min-w-0 transition-all">
           <ChapterView
             chapter={currentChapter}
             onOpenImageModal={handleOpenImageModal}

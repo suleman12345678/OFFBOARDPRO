@@ -198,17 +198,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </button>
           </div>
 
-          {/* Nav Sections - EXACT Linewise order matching screenshot */}
-          <nav className="space-y-5 px-1">
+          {/* Nav Sections - Linewise order with clear spacing between names */}
+          <nav className="space-y-6 px-1">
             {NAV_STRUCTURE.map((section) => (
-              <div key={section.header} className="space-y-1">
+              <div key={section.header} className="space-y-2">
                 {/* Header in uppercase muted bold text */}
                 <h3 className="px-3 text-[11px] font-extrabold tracking-wider text-[#737887] uppercase font-sans">
                   {section.header}
                 </h3>
 
-                {/* Items in linewise order */}
-                <div className="space-y-1 pt-1">
+                {/* Items with comfortable gap between names */}
+                <div className="space-y-2 pt-1">
                   {section.items.map((item) => {
                     const isActive = activeChapterId === item.id;
                     const IconComponent = item.icon;
@@ -226,7 +226,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             : "text-[#9da3af] hover:text-white hover:bg-white/5 font-medium rounded-xl py-2.5 px-4"
                         }`}
                       >
-                        <div className="flex items-center gap-3.5 min-w-0">
+                        <div className="flex items-center gap-4 min-w-0">
                           <IconComponent
                             className={`w-[18px] h-[18px] flex-shrink-0 transition ${
                               isActive
